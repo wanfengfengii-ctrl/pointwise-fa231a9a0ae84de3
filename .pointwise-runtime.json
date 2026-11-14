@@ -6,7 +6,7 @@
     "python3",
     "-B",
     "review.py",
-    "baseline"
+    "verify"
   ],
   "demo": [
     "python3",
