@@ -1,0 +1,68 @@
+{
+  "files": {
+    "a": [
+      {
+        "reading": 7
+      },
+      {
+        "reading": 7
+      }
+    ],
+    "b": [
+      {
+        "reading": 9
+      },
+      {
+        "reading": 11
+      }
+    ]
+  },
+  "operations": [
+    {
+      "op": "prepare",
+      "job": "r",
+      "inputs": [
+        "a",
+        "b"
+      ],
+      "layout": [
+        [
+          [
+            "a",
+            1
+          ],
+          [
+            "b",
+            0
+          ]
+        ],
+        [
+          [
+            "a",
+            0
+          ],
+          [
+            "b",
+            1
+          ]
+        ]
+      ]
+    },
+    {
+      "op": "publish"
+    },
+    {
+      "op": "delete",
+      "snapshot": "initial",
+      "file": "a",
+      "pos": 0
+    },
+    {
+      "op": "read"
+    },
+    {
+      "op": "read",
+      "snapshot": "initial"
+    }
+  ]
+}
